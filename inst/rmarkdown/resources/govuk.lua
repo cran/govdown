@@ -42,7 +42,7 @@ return {
           '<details class="govuk-details" data-module="govuk-details">' ..
           '<summary class="govuk-details__summary">' ..
           '<span class="govuk-details__summary-text">'..
-          pandoc.utils.stringify(el.attributes["summary"]) ..
+          el.attributes["summary"] ..
           '</span>'..
           '</summary>' ..
           '<div class="govuk-details__text">'
@@ -517,7 +517,7 @@ return {
   {
     -- Normal BulletList
     BulletList = function(items)
-      local res = List:new{pandoc.RawBlock('html', '<ul class="govuk=list govuk-list--bullet">')}
+      local res = List:new{pandoc.RawBlock('html', '<ul class="govuk-list govuk-list--bullet">')}
       for _, item in ipairs(items.content) do
         table.insert(res, pandoc.RawBlock('html', '<li class="govuk-body">'))
         res:extend(item)
@@ -539,6 +539,15 @@ return {
       end
       table.insert(res, pandoc.RawBlock('html', '</ol>'))
       return res
+    end
+  },
+
+  {
+    CodeBlock = function(el)
+      if el.classes[1] == nil then
+          el.classes[1] = "plaintext"
+      end
+      return el
     end
   }
 }

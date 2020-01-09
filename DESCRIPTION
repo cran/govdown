@@ -1,8 +1,8 @@
 Package: govdown
 Title: GOV.UK Style Templates for R Markdown
-Version: 0.7.0
+Version: 0.8.0
 Authors@R: 
-    c(person(given = "Crown Copyright 2018",
+    c(person(given = "Crown Copyright 2019",
              role = "cph"),
       person(given = "Duncan",
              family = "Garmonsway",
@@ -20,9 +20,9 @@ LazyData: true
 RoxygenNote: 6.1.1
 SystemRequirements: pandoc (>= 2.0) - http://pandoc.org
 NeedsCompilation: no
-Packaged: 2019-10-14 16:01:40 UTC; nacnudus
-Author: Crown Copyright 2018 [cph],
+Packaged: 2020-01-08 09:36:38 UTC; nacnudus
+Author: Crown Copyright 2019 [cph],
   Duncan Garmonsway [aut, cre]
 Maintainer: Duncan Garmonsway <duncan.garmonsway@digital.cabinet-office.gov.uk>
 Repository: CRAN
-Date/Publication: 2019-10-16 12:10:02 UTC
+Date/Publication: 2020-01-09 15:50:03 UTC
