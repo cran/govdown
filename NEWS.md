@@ -1,3 +1,14 @@
+# govdown 0.9.1
+
+* Fix tabsets (#61 @Kiki-Jiji)
+* Fix indentation of code blocks
+
+# govdown 0.9.0
+
+* Fix a pandoc warning about missing title elements.
+* Provide `unstrap()` to remove unwanted Boostrap CSS from any crosstalk
+    components (#57)
+
 # govdown 0.8.0
 
 * Upgrade to GOV.UK Frontend release v3.4.0.  Some user-facing changes, see the
